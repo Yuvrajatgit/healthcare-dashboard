@@ -1,0 +1,135 @@
+.dashboard {
+  display: flex;
+  overflow: hidden;
+}
+
+.dashboard-heading-div {
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.dashboard-heading {
+  font-weight: 600;
+  color: #39358d;
+  font-size: 1.8rem;
+}
+
+.dashboard-subHeading {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #39358d;
+  opacity: 0.8;
+  display: flex;
+}
+
+.dashboard-heading-icon {
+  margin-top: 0.1rem;
+  margin-left: 0.2rem;
+}
+
+.dashboard-left {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dashboard-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #f3f6fa;
+  border-bottom-right-radius: 2rem;
+  overflow: hidden;
+}
+
+.dashboard-activity {
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.overview-section {
+  padding-left: 2.5rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.dashboard-right-top {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard-right-bottom {
+  flex: 1;
+  padding-bottom: 1rem;
+}
+
+.anatomy-section-wrapper {
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-heading-div {
+    padding: 1.5rem 1rem;
+  }
+  .anatomy-section-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .dashboard {
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 2rem;
+  }
+  .dashboard-left,
+  .dashboard-right {
+    min-height: fit-content;
+    overflow: visible;
+    height: auto;
+    overflow-y: auto;
+    background-color: #ffffff;
+  }
+  .dashboard-right-bottom {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .anatomy-section-wrapper {
+    align-self: flex-start;
+  }
+
+  .dashboard-heading {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-heading-div {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard-heading-div {
+    padding: 0.5rem 0.5rem;
+  }
+  .dashboard-subHeading {
+    font-size: 0.5rem;
+  }
+  .dashboard-right-top {
+    margin-bottom: 4.375rem;
+  }
+}

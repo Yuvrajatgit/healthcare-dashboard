@@ -1,0 +1,109 @@
+.appointment-card {
+  background-color: #dee3fa;
+  border-radius: 1.375rem;
+  padding: 0.875rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Avenir", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.appointment-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-title h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e1e2f;
+  margin: 0;
+}
+
+.appointment-icon {
+  font-size: 1.125rem;
+}
+
+.appointment-time {
+  font-size: 13px;
+  color: #555c6d;
+  font-weight: 400;
+  color: #1e1e2f;
+}
+
+.appointment-doctor {
+  font-size: 0.75rem;
+  color: #1e1e2f;
+}
+
+@media screen and (max-width: 1024px) {
+  .appointment-card {
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    width: 100% !important;
+  }
+
+  .appointment-title h4 {
+    font-size: 13px;
+  }
+
+  .appointment-icon {
+    font-size: 1rem;
+  }
+
+  .appointment-time {
+    font-size: 12px;
+  }
+
+  .appointment-doctor {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appointment-card {
+    width: 100% !important;
+    padding: 0.625rem 1rem;
+  }
+
+  .appointment-title h4 {
+    font-size: 0.75rem
+  }
+
+  .appointment-time {
+    font-size: 11px;
+  }
+
+  .appointment-doctor {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .appointment-card {
+    width: 100% !important;
+    padding: 0.625rem 0.75rem;
+  }
+
+  .appointment-title {
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .appointment-title h4 {
+    font-size: 11px;
+  }
+
+  .appointment-icon {
+    font-size: 14px;
+  }
+
+  .appointment-time,
+  .appointment-doctor {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,126 @@
+.sidebar {
+  position: sticky;
+  top: 7.5rem;
+  background-color: #f3f6fa;
+  border-bottom-left-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.sidebar-top {
+  justify-content: center;
+}
+
+.sidebar-middle {
+  margin-top: 3rem;
+  margin-left: -2.5rem;
+  justify-content: center;
+}
+
+.sidebar-bottom {
+  justify-content: center;
+  align-items: end;
+  margin-left: -2.5rem;
+  margin-top: 3rem;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  opacity: 0.5;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #8a92a6;
+  margin-bottom: 1.4rem;
+}
+
+.sidebar-links {
+  opacity: 0.8;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  color: #8a92a6;
+  font-size: 0.95rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.sidebar-active-link {
+  color: #39358d;
+}
+
+.icon {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar-top {
+    justify-content: flex-start;
+    align-items: flex-start !important;
+  }
+  .sidebar-middle {
+    justify-content: flex-start;
+    margin-left: 0;
+    align-items: flex-start !important;
+  }
+  .sidebar-bottom {
+    justify-content: flex-start;
+    margin-left: 0;
+    align-items: flex-start !important;
+  }
+  .sidebar {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-bottom {
+    align-items: flex-end;
+  }
+  .sidebar-item {
+    font-size: 0.8rem;
+  }
+  .icon {
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  .sidebar {
+    padding-left: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar-title {
+    font-size: 0.5rem;
+  }
+  .sidebar-middle {
+    margin-top: 0;
+  }
+  .sidebar-item {
+    font-size: 0.6rem;
+    margin-left: 0.2rem;
+  }
+  .icon {
+    font-size: 0.6rem;
+    margin-right: 0.6rem;
+  }
+  .flex-bottom {
+    margin-top: 0;
+    align-items: flex-end;
+  }
+  .sidebar {
+    padding-left: 0.2rem;
+  }
+}

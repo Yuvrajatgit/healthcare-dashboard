@@ -1,0 +1,148 @@
+.health-card {
+  background-color: #f3f6fa;
+  border-radius: 1.125rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 15px;
+  min-width: 11.25rem;
+  font-family: "Avenir", sans-serif;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 8px;
+}
+
+.health-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #39358d;
+}
+
+.card-date {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  opacity: 0.5;
+}
+
+.progress-bar {
+  background-color: #e5e7eb;
+  height: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.healthCard-details{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-family: "Avenir", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  margin-right: 1.875rem;
+}
+
+.healthCard-details a {
+  text-decoration: none;
+  color: #39358d;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.health-status-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .health-card {
+    min-width: 10rem;
+    padding: 0.75rem;
+    width: 80%;
+  }
+
+  .card-title {
+    font-size: 0.875rem;
+  }
+
+  .card-date {
+    font-size: 0.75rem;
+  }
+
+  .health-icon {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .health-card {
+    min-width: 8.75rem;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .card-title {
+    font-size: 13px;
+  }
+
+  .card-date {
+    font-size: 11px;
+  }
+
+  .health-icon {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+
+  .healthCard-details a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .health-status-cards {
+    gap: 10px;
+  }
+
+  .health-card {
+    min-width: 80%;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 0.75rem;
+  }
+
+  .card-date {
+    font-size:  0.625rem;
+  }
+
+  .healthCard-details {
+    margin-right:  0.625rem;
+  }
+
+  .healthCard-details a {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+.app-container {
+  height: 100dvh;
+  background-color: #e5ecf4;
+  overflow: hidden;
+}
+
+.app-layout {
+  background-color: #ffffff;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin: 1rem;
+  padding: 0.6rem;
+  align-self: flex-start;
+  height: calc(100dvh - 2rem);
+}
+
+.body-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 7fr;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-grid {
+  display: flex;
+  height: 8.125rem;
+  z-index: 100;
+}
+
+@media screen and (max-width: 1024px) {
+  .body-grid {
+    grid-template-columns: 25% 75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .body-grid {
+    grid-template-columns: 30% 70%;
+  }
+}

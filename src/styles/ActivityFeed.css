@@ -1,0 +1,200 @@
+.activity-card {
+  background-color: #f3f6fa;
+  border-radius: 1.25rem;
+  padding: 0.938rem;
+  max-height: 12.5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.02);
+  font-family: "Avenir", sans-serif;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-header h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #39358d;
+  margin: 0;
+}
+
+.activity-header p {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  opacity: 0.5;
+  color: #6b7280;
+}
+
+.activity-chart {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  height: 7.5rem;
+}
+
+.day-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3.25rem;
+}
+
+.lines {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: flex-end;
+  height: 5rem;
+  justify-content: center;
+}
+
+.line {
+  width: 6px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.full {
+  height: 100%;
+}
+
+.middle {
+  height: 60%;
+  align-self: center;
+}
+
+.split {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.half-line {
+  width: 6px;
+  height: 1.25rem;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.bottom {
+  height: 30%;
+}
+
+.day-label {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+.line-margin {
+  margin-bottom: 10px;
+}
+
+.cyan {
+  background-color: #20d9e4;
+}
+
+.indigo {
+  background-color: #39358d;
+}
+
+.grey {
+  background-color: #e5e7eb;
+}
+
+@media screen and (max-width: 1024px) {
+  .activity-header h3 {
+    font-size: 1rem;
+  }
+
+  .activity-header p {
+    font-size: 11px;
+  }
+
+  .day-block {
+    width: 2.875rem;
+  }
+
+  .day-label {
+    font-size: 11px;
+  }
+
+  .line {
+    width: 5px;
+  }
+
+  .half-line {
+    width: 5px;
+    height: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .activity-header h3 {
+    font-size: 0.938rem;
+  }
+
+  .activity-chart {
+    gap: 0.8rem;
+  }
+
+  .day-block {
+    width: 2.6rem;
+  }
+
+  .line {
+    width: 4px;
+  }
+
+  .half-line {
+    width: 4px;
+    height: 1rem;
+  }
+
+  .day-label {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .activity-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .activity-header h3 {
+    font-size: 14px;
+  }
+
+  .activity-header p {
+    font-size: 10px;
+  }
+
+  .activity-chart {
+    gap: 0.6rem;
+  }
+
+  .day-block {
+    width: 2.4rem;
+  }
+
+  .line {
+    width: 3px;
+  }
+
+  .half-line {
+    width: 3px;
+    height: 14px;
+  }
+
+  .day-label {
+    font-size: 9px;
+  }
+}
